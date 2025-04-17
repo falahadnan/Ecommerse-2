@@ -12,6 +12,8 @@ class WalletBalanceCard extends StatelessWidget {
   final double balance;
   final VoidCallback onTabChargeBalance;
 
+  get whileColor => null;
+
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
@@ -35,7 +37,7 @@ class WalletBalanceCard extends StatelessWidget {
                   const Text(
                     "Your current balance",
                     style: TextStyle(
-                        color: whileColor80,
+                        color: whiteColor80,
                         fontWeight: FontWeight.w500,
                         fontSize: 12),
                   ),

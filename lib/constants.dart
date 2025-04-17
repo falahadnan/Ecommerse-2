@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 
+abstract class AppColors {
+  static const primary = Color(0xFF0066FF); // Main blue from devaito.com
+  static const primaryDark = Color(0xFF0052CC); // Darker blue
+  static const accent =
+      Color.fromARGB(255, 0, 214, 143); // Green accent from devaito.com
+
+  static const textPrimary = Color(0xFF1A1F36); // Dark text from devaito.com
+  static const textSecondary = Color(0xFF697386); // Gray text from devaito.com
+
+  static const background = Color(0xFFFFFFFF); // White background
+  static const card =
+      Color(0xFFF7F9FC); // Light gray for cards from devaito.com
+}
+
 // Just for demo
 const productDemoImg1 = "https://i.imgur.com/CGCyp1d.png";
 const productDemoImg2 = "https://i.imgur.com/AkzWQuJ.png";
@@ -13,54 +27,52 @@ const productDemoImg6 = "https://i.imgur.com/JfyZlnO.png";
 
 const grandisExtendedFont = "Grandis Extended";
 
-// On color 80, 60.... those means opacity
+// Main colors from devaito.com
+const Color primaryColor = Color(0xFF0066FF); // Main blue
+const MaterialColor primaryMaterialColor = MaterialColor(
+  0xFF0066FF,
+  <int, Color>{
+    50: Color(0xFFE5F0FF),
+    100: Color(0xFFB3D1FF),
+    200: Color(0xFF80B3FF),
+    300: Color(0xFF4D94FF),
+    400: Color(0xFF1A7FFF),
+    500: Color(0xFF0066FF), // Primary blue
+    600: Color(0xFF0052CC),
+    700: Color(0xFF003D99),
+    800: Color(0xFF002966),
+    900: Color(0xFF001433),
+  },
+);
 
-const Color primaryColor = Color(0xFF7B61FF);
+// Black color variations from devaito.com
+const Color blackColor = Color(0xFF1A1F36); // True black
+const Color blackColor80 = Color(0xFF424B62); // 80% black
+const Color blackColor60 = Color(0xFF697386); // 60% black
+const Color blackColor40 = Color(0xFF8F96A3); // 40% black
+const Color blackColor20 = Color(0xFFB5BAC3); // 20% black
+const Color blackColor10 = Color(0xFFDADCE1); // 10% black
+const Color blackColor5 = Color(0xFFECEDF0); // 5% black
 
-const MaterialColor primaryMaterialColor =
-    MaterialColor(0xFF9581FF, <int, Color>{
-  50: Color(0xFFEFECFF),
-  100: Color(0xFFD7D0FF),
-  200: Color(0xFFBDB0FF),
-  300: Color(0xFFA390FF),
-  400: Color(0xFF8F79FF),
-  500: Color(0xFF7B61FF),
-  600: Color(0xFF7359FF),
-  700: Color(0xFF684FFF),
-  800: Color(0xFF5E45FF),
-  900: Color(0xFF6C56DD),
-});
-
-const Color blackColor = Color(0xFF16161E);
-const Color blackColor80 = Color(0xFF45454B);
-const Color blackColor60 = Color(0xFF737378);
-const Color blackColor40 = Color(0xFFA2A2A5);
-const Color blackColor20 = Color(0xFFD0D0D2);
-const Color blackColor10 = Color(0xFFE8E8E9);
-const Color blackColor5 = Color(0xFFF3F3F4);
-
+// White color variations
 const Color whiteColor = Colors.white;
-const Color whileColor80 = Color(0xFFCCCCCC);
+const Color whiteColor80 = Color(0xFFCCCCCC);
 const Color whileColor60 = Color(0xFF999999);
 const Color whileColor40 = Color(0xFF666666);
 const Color whileColor20 = Color(0xFF333333);
 const Color whileColor10 = Color(0xFF191919);
 const Color whileColor5 = Color(0xFF0D0D0D);
 
-const Color greyColor = Color(0xFFB8B5C3);
-const Color lightGreyColor = Color(0xFFF8F8F9);
-const Color darkGreyColor = Color(0xFF1C1C25);
-// const Color greyColor80 = Color(0xFFC6C4CF);
-// const Color greyColor60 = Color(0xFFD4D3DB);
-// const Color greyColor40 = Color(0xFFE3E1E7);
-// const Color greyColor20 = Color(0xFFF1F0F3);
-// const Color greyColor10 = Color(0xFFF8F8F9);
-// const Color greyColor5 = Color(0xFFFBFBFC);
+// Updated grey colors to match devaito.com
+const Color greyColor = Color(0xFF697386); // Main grey
+const Color lightGreyColor = Color(0xFFF7F9FC); // Light grey background
+const Color darkGreyColor = Color(0xFF1A1F36); // Dark grey
 
-const Color purpleColor = Color(0xFF7B61FF);
-const Color successColor = Color(0xFF2ED573);
-const Color warningColor = Color(0xFFFFBE21);
-const Color errorColor = Color(0xFFEA5B5B);
+// Accent and status colors from devaito.com
+const Color purpleColor = Color(0xFF7B61FF); // Purple accent
+const Color successColor = Color(0xFF00D68F); // Success green
+const Color warningColor = Color(0xFFFFAB00); // Warning amber
+const Color errorColor = Color(0xFFFF3B3B); // Error red
 
 const double defaultPadding = 16.0;
 const double defaultBorderRadious = 12.0;
